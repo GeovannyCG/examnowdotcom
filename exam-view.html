@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExamtNow.com - Extraccion de base de datos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!--Link de Ico de la palataforma-->
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="logotype">
+        <h3>ExamNow<span style="color: white;">.com</span></h3>
+    </div>
+    <div class="wrapper-exam">
+        <div id="content-elements-exam">
+            <div class="container-exam" style="
+            margin-top: 20px;
+            border-top: 4px solid #65b7ff;
+            border-left: 4px solid #8665ff;">
+                <h2>Examen de "Extraccion de base de datos"</h2>
+            </div>
+
+            <div class="container-exam" style="border-left: 4px solid #8665ff">
+                <div class="dates">
+                    <span>Alumno: <b id="nombre-usuario"></b></span>
+                    <span>Tiempo restante: <b id="tiempo-usuario">00:00</b></span>
+                </div>
+                <div class="instructions" style="margin-top: 20px;">
+                    <b style="color: #8665ff;">***Indicaciones:</b>
+                    <p>
+                        <ul>
+                            <li>Responde todas las preguntas correctamente.</li>
+                            <li>Cuando el tiempo se acabe el examen se detendra automaticamente.</li>
+                            <li style="color: red;">Si cierras o retrocedes la pagina, el examen sera cancelado.</li>
+                            <li>El tiempo seguira avanzando aun recargando la pagina.</li>
+                            <li style="text-decoration: underline;">Tus resultados seran calculados automaticamente al final del examen.</li>
+                        </ul>
+                        <span style="font-style: italic;">"Confia en ti mismo, has llegado hasta aqui por una razon, ¡Tu puedes hacerlo!, El exito esta a solo un examen de distancia".</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es la extracción de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question1" id="flexRadioDefault1-1" />
+                    <label class="form-check-label" for="flexRadioDefault1-1">
+                        Un proceso para eliminar información de una base de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="flexRadioDefault1-2" />
+                    <label class="form-check-label" for="flexRadioDefault1-2">
+                        Un proceso para recuperar información relevante de una base de
+                        datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" id="flexRadioDefault1-3" />
+                    <label class="form-check-label" for="flexRadioDefault1-3">
+                        Un proceso para organizar datos en una base de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>
+                    ¿Cuál de las siguientes no es una técnica común de extracción de
+                    datos?
+                </h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question2" id="flexRadioDefault2-1" />
+                    <label class="form-check-label" for="flexRadioDefault2-1">
+                        Web scraping.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" id="flexRadioDefault2-2" />
+                    <label class="form-check-label" for="flexRadioDefault2-2">
+                        Consultas SQL.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" id="flexRadioDefault2-3" />
+                    <label class="form-check-label" for="flexRadioDefault2-3">
+                        Edición de imágenes.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es el ETL en el contexto de la extracción de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question3" id="flexRadioDefault3-1" />
+                    <label class="form-check-label" for="flexRadioDefault3-1">
+                        Una técnica para eliminar datos no deseados.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="flexRadioDefault3-2" />
+                    <label class="form-check-label" for="flexRadioDefault3-2">
+                        Un proceso que involucra la Extracción, Transformación y Carga de
+                        datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" id="flexRadioDefault3-3" />
+                    <label class="form-check-label" for="flexRadioDefault3-3">
+                        Un lenguaje de consulta para bases de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es el web scraping?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question4" id="flexRadioDefault4-1" />
+                    <label class="form-check-label" for="flexRadioDefault4-1">
+                        Un proceso para extraer datos de páginas web.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="flexRadioDefault4-2" />
+                    <label class="form-check-label" for="flexRadioDefault4-2">
+                        Un proceso para encriptar datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" id="flexRadioDefault4-3" />
+                    <label class="form-check-label" for="flexRadioDefault4-3">
+                        Un proceso para cargar datos en una base de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es una API en el contexto de extracción de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question5" id="flexRadioDefault5-1" />
+                    <label class="form-check-label" for="flexRadioDefault5-1">
+                        Un lenguaje de programación.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="flexRadioDefault5-2" />
+                    <label class="form-check-label" for="flexRadioDefault5-2">
+                        Una interfaz de programación de aplicaciones que permite la
+                        comunicación entre diferentes sistemas de software.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" id="flexRadioDefault5-3" />
+                    <label class="form-check-label" for="flexRadioDefault5-3">
+                        Una técnica para eliminar datos duplicados.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>
+                    ¿Cuál es una ventaja de utilizar consultas SQL para la extracción de
+                    datos?
+                </h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question6" id="flexRadioDefault6-1" />
+                    <label class="form-check-label" for="flexRadioDefault6-1">
+                        Mayor seguridad en la extracción de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="flexRadioDefault6-2" />
+                    <label class="form-check-label" for="flexRadioDefault6-2">
+                        Mayor flexibilidad en la selección de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" id="flexRadioDefault6-3" />
+                    <label class="form-check-label" for="flexRadioDefault6-3">
+                        Mayor rapidez en la extracción de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué significa la sigla "ETL"?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question7" id="flexRadioDefault7-1" />
+                    <label class="form-check-label" for="flexRadioDefault7-1">
+                        Extraer, Transferir, Listar.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="flexRadioDefault7-2" />
+                    <label class="form-check-label" for="flexRadioDefault7-2">
+                        Extraer, Transformar, Cargar.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" id="flexRadioDefault7-3" />
+                    <label class="form-check-label" for="flexRadioDefault7-3">
+                        Extracción, Transformación, Carga.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>
+                    ¿Qué es una restricción de clave primaria en una base de datos?
+                </h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question8" id="flexRadioDefault8-1" />
+                    <label class="form-check-label" for="flexRadioDefault8-1">
+                        Un valor único que identifica de forma única a cada fila en una
+                        tabla.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" id="flexRadioDefault8-2" />
+                    <label class="form-check-label" for="flexRadioDefault8-2">
+                        Una regla que limita el número de filas en una tabla.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" id="flexRadioDefault8-3" />
+                    <label class="form-check-label" for="flexRadioDefault8-3">
+                        Un conjunto de datos almacenado en una tabla.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es el formato JSON?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question9" id="flexRadioDefault9-1" />
+                    <label class="form-check-label" for="flexRadioDefault9-1">
+                        Un lenguaje de marcado para la creación de páginas web.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question9" id="flexRadioDefault9-2" />
+                    <label class="form-check-label" for="flexRadioDefault9-2">
+                        Un formato de intercambio de datos ligero y fácil de leer.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question9" id="flexRadioDefault9-3" />
+                    <label class="form-check-label" for="flexRadioDefault9-3">
+                        Un lenguaje de programación orientado a objetos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es un JOIN en una consulta SQL?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question10" id="flexRadioDefault10-1" />
+                    <label class="form-check-label" for="flexRadioDefault10-1">
+                        Una operación que combina filas de dos o más tablas en función de
+                        una condición relacionada.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question10" id="flexRadioDefault10-2" />
+                    <label class="form-check-label" for="flexRadioDefault10-2">
+                        Una operación que elimina datos duplicados de una tabla.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question10" id="flexRadioDefault10-3" />
+                    <label class="form-check-label" for="flexRadioDefault10-3">
+                        Una operación que ordena los datos en una tabla.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es un índice en una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question11" id="flexRadioDefault11-1" />
+                    <label class="form-check-label" for="flexRadioDefault11-1">
+                        Una lista de todos los registros en una tabla.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question11" id="flexRadioDefault11-2" />
+                    <label class="form-check-label" for="flexRadioDefault11-2">
+                        Una estructura que mejora la velocidad de búsqueda de registros en
+                        una tabla.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question11" id="flexRadioDefault11-3" />
+                    <label class="form-check-label" for="flexRadioDefault11-3">
+                        Una restricción que asegura la integridad de los datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es la normalización de una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question12" id="flexRadioDefault12-1" />
+                    <label class="form-check-label" for="flexRadioDefault12-1">
+                        Un proceso para reducir el tamaño de una base de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question12" id="flexRadioDefault12-2" />
+                    <label class="form-check-label" for="flexRadioDefault12-2">
+                        Un proceso para organizar una base de datos de manera eficiente y
+                        reducir la redundancia.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question12" id="flexRadioDefault12-3" />
+                    <label class="form-check-label" for="flexRadioDefault12-3">
+                        Un proceso para encriptar los datos de una base de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es un procedimiento almacenado en una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question13" id="flexRadioDefault13-1" />
+                    <label class="form-check-label" for="flexRadioDefault13-1">
+                        Una colección de consultas SQL.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question13" id="flexRadioDefault13-2" />
+                    <label class="form-check-label" for="flexRadioDefault13-2">
+                        Un conjunto de datos almacenados en una tabla.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question13" id="flexRadioDefault13-3" />
+                    <label class="form-check-label" for="flexRadioDefault13-3">
+                        Una serie de instrucciones SQL que se almacenan y pueden ser
+                        reutilizadas.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es la integridad referencial en una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question14" id="flexRadioDefault14-1" />
+                    <label class="form-check-label" for="flexRadioDefault14-1">
+                        Una técnica para evitar la duplicación de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question14" id="flexRadioDefault14-2" />
+                    <label class="form-check-label" for="flexRadioDefault14-2">
+                        Un conjunto de reglas que aseguran que las relaciones entre tablas
+                        son consistentes.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question14" id="flexRadioDefault14-3" />
+                    <label class="form-check-label" for="flexRadioDefault14-3">
+                        Un método para organizar datos en una base de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es un dump de base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question15" id="flexRadioDefault15-1" />
+                    <label class="form-check-label" for="flexRadioDefault15-1">
+                        Una copia de seguridad de toda la base de datos en un archivo.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question15" id="flexRadioDefault15-2" />
+                    <label class="form-check-label" for="flexRadioDefault15-2">
+                        Una operación para eliminar datos de una base de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question15" id="flexRadioDefault15-3" />
+                    <label class="form-check-label" for="flexRadioDefault15-3">
+                        Una técnica para recuperar datos perdidos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Cuál es el propósito de un índice en una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question16" id="flexRadioDefault16-1" />
+                    <label class="form-check-label" for="flexRadioDefault16-1">
+                        Aumentar la redundancia de los datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question16" id="flexRadioDefault16-2" />
+                    <label class="form-check-label" for="flexRadioDefault16-2">
+                        Acelerar la búsqueda y recuperación de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question16" id="flexRadioDefault16-3" />
+                    <label class="form-check-label" for="flexRadioDefault16-3">
+                        Organizar los datos en la base de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>
+                    ¿Qué es un lenguaje de consulta utilizado en bases de datos
+                    relacionales?
+                </h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question17" id="flexRadioDefault17-1" />
+                    <label class="form-check-label" for="flexRadioDefault17-1">
+                        HTML.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question17" id="flexRadioDefault17-2" />
+                    <label class="form-check-label" for="flexRadioDefault17-2">
+                        SQL.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question17" id="flexRadioDefault17-3" />
+                    <label class="form-check-label" for="flexRadioDefault17-3">
+                        Python.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es un archivo CSV?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question18" id="flexRadioDefault18-1" />
+                    <label class="form-check-label" for="flexRadioDefault18-1">
+                        Un formato de archivo para imágenes.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question18" id="flexRadioDefault18-2" />
+                    <label class="form-check-label" for="flexRadioDefault18-2">
+                        Un formato de archivo para intercambio de datos tabulares.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question18" id="flexRadioDefault18-3" />
+                    <label class="form-check-label" for="flexRadioDefault18-3">
+                        Un formato de archivo para documentos de texto.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es la desnormalización de una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question19" id="flexRadioDefault19-1" />
+                    <label class="form-check-label" for="flexRadioDefault19-1">
+                        Un proceso para aumentar el tamaño de una base de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question19" id="flexRadioDefault19-2" />
+                    <label class="form-check-label" for="flexRadioDefault19-2">
+                        Un proceso para introducir redundancia de datos con el fin de
+                        mejorar el rendimiento de las consultas.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question19" id="flexRadioDefault19-3" />
+                    <label class="form-check-label" for="flexRadioDefault19-3">
+                        Un proceso para eliminar datos duplicados de una base de datos.
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-exam">
+                <h4>¿Qué es una transacción en una base de datos?</h4>
+                <div class="form-check" style="margin-top: 20px">
+                    <input class="form-check-input" type="radio" name="question20" id="flexRadioDefault20-1" />
+                    <label class="form-check-label" for="flexRadioDefault20-1">
+                        Una operación que no afecta los datos en una base de datos.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question20" id="flexRadioDefault20-2" />
+                    <label class="form-check-label" for="flexRadioDefault20-2">
+                        Un conjunto de operaciones que se realizan como una unidad
+                        atómica.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question20" id="flexRadioDefault20-3" />
+                    <label class="form-check-label" for="flexRadioDefault20-3">
+                        Un tipo de consulta SQL.
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <button id="enviar">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
